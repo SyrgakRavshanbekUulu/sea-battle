@@ -1,10 +1,9 @@
-import { makeStyles } from '@material-ui/core';
-import './App.css';
-import { GameContent } from './game-content';
-import { Navbar } from './header';
+import {makeStyles} from '@material-ui/core';
+import {GameContent} from './game-content';
+import {Navbar} from './header';
 
 function App() {
-  const styles = useStyles()
+  const styles = useStyles();
   return (
     <div className="App">
       <Navbar />
@@ -18,7 +17,7 @@ function App() {
 const useStyles = makeStyles({
   gameZone: {
     marginTop: '30px',
-  }
-})
+  },
+});
 
 export default App;
