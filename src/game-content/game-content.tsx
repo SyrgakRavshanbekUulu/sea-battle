@@ -1,6 +1,6 @@
-import { Grid, makeStyles, Paper } from "@material-ui/core"
-import { SectionCreateSea } from "./section-create-sea"
-import { GameZone } from "./game-zone"
+import {Grid, makeStyles, Paper} from '@material-ui/core'
+import {SectionCreateSea} from './section-create-sea'
+import {GameZone} from './game-zone'
 
 export const GameContent = () => {
   const styles = useStyles()
@@ -11,7 +11,7 @@ export const GameContent = () => {
         <SectionCreateSea />
         <GameZone />
       </Grid>
-    </Paper> 
+    </Paper>
   )
 }
 
@@ -20,5 +20,6 @@ const useStyles = makeStyles({
     margin: 'auto',
     width: '800px',
     height: '800px',
-  }
-}) 
+  },
+})
+

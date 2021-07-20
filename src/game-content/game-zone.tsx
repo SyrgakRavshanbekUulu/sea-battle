@@ -1,17 +1,20 @@
 import {Grid, makeStyles} from '@material-ui/core'
-import { useState } from 'react'
-import { Square } from './square'
+import {useState} from 'react'
+import {Square} from './square'
 
-let state = new Array<number>()
+const state = new Array<number>()
 state[99] = 0
 state.fill(0)
 
 export const GameZone = () => {
   const styles = useStyles()
   const [staties, setStaties] = useState([])
-  let squaries = []
+  const squaries = []
   for (let i:number = 0; i < 100; i++) {
-    squaries[i] = <Square state={state[i]} key={i} onClick={() => state[i] = 1}/>
+    squaries[i] = <Square
+      state={state[i]}
+      key={i}
+      onClick={() => state[i] = 1}/>
   }
   return (
     <Grid container className={styles.box}>
@@ -28,5 +31,5 @@ const useStyles = makeStyles({
     height: '70%',
     background: '#d1d1d1',
     marginTop: '10px',
-  }
+  },
 })

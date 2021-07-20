@@ -1,5 +1,5 @@
-import { Grid, makeStyles } from "@material-ui/core"
-import { WarShips } from "../game-elements/war-ships"
+import {Grid, makeStyles} from '@material-ui/core'
+import {WarShips} from '../game-elements/war-ships'
 
 export const SectionCreateSea = () => {
   const styles = useStyles()
@@ -24,6 +24,6 @@ const useStyles = makeStyles({
     height: '25%',
     width: '95%',
     marginTop: '10px',
-    background: 'green'
-  }
+    background: 'green',
+  },
 })
