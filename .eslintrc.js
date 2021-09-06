@@ -25,5 +25,6 @@ module.exports = {
     'semi': 'off',
     'no-array-constructor': 'off',
     'no-unused-vars': 'warn',
+    'quotes': 'off',
   },
 };

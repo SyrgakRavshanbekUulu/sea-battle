@@ -1,25 +1,23 @@
 import {makeStyles} from '@material-ui/core';
-import {GameContent} from './game-content';
+import {Route, Switch} from 'react-router-dom';
 import {Navbar} from './components/header';
-import {UserName} from './components/start-game/user-name';
+import {HomePage} from './pages/home';
+import {NewGame} from './pages/newGame';
 
 function App() {
   const styles = useStyles();
   return (
     <div className={styles.main}>
       <Navbar />
-      <UserName />
-      <div className={styles.gameZone}>
-        <GameContent />
-      </div>
+      <Switch>
+        <Route path='/' exact component={HomePage}/>
+        <Route path='/new-game' exact component={NewGame}/>
+      </Switch>
     </div>
-  );
+  )
 }
 
 const useStyles = makeStyles({
-  gameZone: {
-    marginTop: '30px',
-  },
   main: {
     // margin: 'auto',
   },
